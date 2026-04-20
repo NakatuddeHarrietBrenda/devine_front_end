@@ -243,3 +243,89 @@ body {
   padding-top: 10px;
   font-size: 13px;
 }
+
+.nav a {
+  position: relative;
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+/* animated underline */
+.nav a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: -5px;
+  left: 0;
+  background: #f97316;
+  transition: 0.3s;
+}
+
+.nav a:hover::after {
+  width: 100%;
+}
+
+.nav a:hover {
+  color: #f97316;
+}
+
+
+/* CONTACT LAYOUT */
+.contact-layout {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+/* FORM BOX */
+.contact-form-box {
+  flex: 1;
+  min-width: 300px;
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+/* CONTACT INFO */
+.contact-info {
+  flex: 1;
+  min-width: 300px;
+  display: grid;
+  gap: 15px;
+}
+
+/* INFO CARD */
+.info-card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  transition: 0.3s;
+}
+
+.info-card:hover {
+  transform: translateY(-5px);
+}
+
+.info-card .icon {
+  font-size: 25px;
+  color: #f97316;
+  margin-bottom: 10px;
+}
+
+/* MAP BOX */
+.map-box {
+  height: 200px;
+  background: #e5e7eb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  font-weight: bold;
+}
