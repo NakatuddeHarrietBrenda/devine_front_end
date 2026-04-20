@@ -21,7 +21,7 @@ function Header() {
         <Link className={isActive("/")} to="/">Home</Link>
         <Link className={isActive("/about")} to="/about">About</Link>
         <Link className={isActive("/services")} to="/services">Services</Link>
-        <Link className={isActive("/projects")} to="/projects">Projects</Link>
+        
         <Link className={isActive("/contact")} to="/contact">Contact</Link>
       </nav>
 
